@@ -1,1 +1,1 @@
-# Event Panel: Codegenerator
+# Event Panel: Code generator
