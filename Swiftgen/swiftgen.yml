@@ -1,0 +1,9 @@
+json:
+  inputs: Scheme.json
+  outputs:
+    templatePath: my-json-template.stencil
+    output: JSON.swift
+    params:
+      enumName: GeneratedAnalyticsEvents
+      eventClassName: AnalyticsEvent
+      documentation: true
