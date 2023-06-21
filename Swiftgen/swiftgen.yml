@@ -1,8 +1,8 @@
 json:
-  inputs: Scheme.json
+  inputs: WorkspaceScheme.json
   outputs:
-    templatePath: my-json-template.stencil
-    output: JSON.swift
+    templatePath: event-panel-template.stencil
+    output: GeneratedAnalyticsEvents.swift
     params:
       enumName: GeneratedAnalyticsEvents
       eventClassName: AnalyticsEvent

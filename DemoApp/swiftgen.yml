@@ -1,0 +1,12 @@
+input_dir: DemoApp/Analytics/
+output_dir: DemoApp/Analytics/
+
+json:
+  inputs: WorkspaceScheme.json
+  outputs:
+    templatePath: event-panel-template.stencil
+    output: GeneratedAnalyticsEvents.swift
+    params:
+      enumName: GeneratedAnalyticsEvents
+      eventClassName: AnalyticsEvent
+      documentation: true
