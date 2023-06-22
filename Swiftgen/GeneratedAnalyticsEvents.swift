@@ -37,7 +37,7 @@ internal enum GeneratedAnalyticsEvents {
     ///     - phone_number: The phone number used to create the account
     internal func accountCreated(
       email: String,
-      phoneNumber: String
+      phoneNumber: String?
     ) -> AnalyticsEvent {
       AnalyticsEvent(
         name: "Account Created",
