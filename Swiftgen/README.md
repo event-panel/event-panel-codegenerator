@@ -10,3 +10,5 @@ Templates in SwiftGen are based on [Stencil](https://stencil.fuller.li/), a temp
 Additionally to the [tags and filters](https://stencil.fuller.li/en/latest/builtins.html) provided by Stencil, SwiftGen provides some additional ones, documented in the [StencilSwiftKit framework](https://github.com/SwiftGen/StencilSwiftKit).
 
 For VSCode there's an extension [Stencil for Visual Studio Code](https://github.com/stencilproject/vscode-stencil) that adds support for the Stencil template language.
+
+![alt text](https://github.com/event-panel/event-panel-codegenerator/blob/main/Swiftgen/Screenshots/Editing%20template.png)
