@@ -13,6 +13,9 @@
 		E00CD28A2A435DE0005C9EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00CD2892A435DE0005C9EDC /* Assets.xcassets */; };
 		E00CD28D2A435DE0005C9EDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00CD28C2A435DE0005C9EDC /* Preview Assets.xcassets */; };
 		E00CD2982A4362B4005C9EDC /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CD2972A4362B4005C9EDC /* AnalyticsEvent.swift */; };
+		E00CD29B2A4581DF005C9EDC /* WorkspaceScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = E00CD2992A4581DF005C9EDC /* WorkspaceScheme.json */; };
+		E00CD29C2A4581DF005C9EDC /* GeneratedAnalyticsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00CD29A2A4581DF005C9EDC /* GeneratedAnalyticsEvents.swift */; };
+		E050FC862A607D9900042BDA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E050FC852A607D9900042BDA /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		E00CD2892A435DE0005C9EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E00CD28C2A435DE0005C9EDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E00CD2972A4362B4005C9EDC /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
+		E00CD2992A4581DF005C9EDC /* WorkspaceScheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WorkspaceScheme.json; sourceTree = "<group>"; };
+		E00CD29A2A4581DF005C9EDC /* GeneratedAnalyticsEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedAnalyticsEvents.swift; sourceTree = "<group>"; };
+		E050FC852A607D9900042BDA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				E00CD2942A43600B005C9EDC /* Analytics */,
 				E00CD2852A435DDF005C9EDC /* DemoAppApp.swift */,
 				E00CD2872A435DDF005C9EDC /* ContentView.swift */,
+				E050FC852A607D9900042BDA /* ContentViewModel.swift */,
 				E00CD2892A435DE0005C9EDC /* Assets.xcassets */,
 				E00CD28B2A435DE0005C9EDC /* Preview Content */,
 			);
@@ -97,6 +104,8 @@
 		E00CD2942A43600B005C9EDC /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				E00CD29A2A4581DF005C9EDC /* GeneratedAnalyticsEvents.swift */,
+				E00CD2992A4581DF005C9EDC /* WorkspaceScheme.json */,
 				E00CD2972A4362B4005C9EDC /* AnalyticsEvent.swift */,
 			);
 			path = Analytics;
@@ -164,6 +173,7 @@
 			files = (
 				E00CD28D2A435DE0005C9EDC /* Preview Assets.xcassets in Resources */,
 				E00CD28A2A435DE0005C9EDC /* Assets.xcassets in Resources */,
+				E00CD29B2A4581DF005C9EDC /* WorkspaceScheme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,12 +204,14 @@
 		};
 		E00CD2932A435F15005C9EDC /* Generate analytics events */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PROJECT_DIR}/${PROJECT_NAME}/Analytics/WorkspaceScheme.json",
 			);
 			name = "Generate analytics events";
 			outputFileListPaths = (
@@ -209,7 +221,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n  echo \"warning:  ${PROJECT_DIR}/${PROJECT_NAME}/Analytics/GeneratedAnalyticsEvents.swift\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -219,8 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E00CD2882A435DDF005C9EDC /* ContentView.swift in Sources */,
+				E00CD29C2A4581DF005C9EDC /* GeneratedAnalyticsEvents.swift in Sources */,
 				E00CD2982A4362B4005C9EDC /* AnalyticsEvent.swift in Sources */,
 				E00CD2862A435DDF005C9EDC /* DemoAppApp.swift in Sources */,
+				E050FC862A607D9900042BDA /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

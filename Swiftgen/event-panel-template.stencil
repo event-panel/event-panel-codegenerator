@@ -39,7 +39,7 @@ import Foundation
 {%- endmacro %}
 {% macro functionBlock functionName arguments returnValue functionBody indent %}
   {% filter indent:indent %}
-  {{accessModifier}} func {{functionName}}({{arguments}}) -> {{returnValue}} {
+  {{accessModifier}} static func {{functionName}}({{arguments}}) -> {{returnValue}} {
     {{functionBody}}      
   }
   {% endfilter %}
