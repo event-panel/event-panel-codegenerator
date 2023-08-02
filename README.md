@@ -34,7 +34,7 @@ internal enum GeneratedAnalyticsEvents {
     /// A login screen has been opened
     /// - Parameters:
     ///     - google_auth_is_enabled: A flag that indicates it is possible to login with Google
-    internal func loginScreenOpened(
+    internal static func loginScreenOpened(
       googleAuthIsEnabled: Bool
     ) -> AnalyticsEvent {
       AnalyticsEvent(

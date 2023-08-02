@@ -1,122 +1,122 @@
 {
-    "workspace": "Uber",
+    "workspace": "Mobile",
     "events": [
-      {
-        "id": "p62Ljsjm5D",
-        "name": "Login Screen Opened",
-        "description": "A login screen has been opened",
-        "category_ids": [
-          "aexesvkax"
-        ],
-        "sources": [
-          "iOS",
-          "Android"
-        ],
-        "properties": [
-          {
-            "id": "3YOTg-Opp",
-            "name": "google_auth_is_enabled",
-            "description": "A flag that indicates it is possible to login with Google",
-            "type": "Bool",
-            "required": true
-          }
-        ]
-      },
-      {
-        "id": "p62Ljsjm5D",
-        "name": "Login Screen Rotated",
-        "description": "A login screen has been rotated",
-        "category_ids": [
-          "aexesvkax"
-        ],
-        "sources": [
-          "iOS",
-          "Android"
-        ],
-        "properties": []
-      },
-      {
-        "id": "sYdFgHjKl",
-        "name": "Account Created",
-        "description": "A new account has been created",
-        "category_ids": [
-          "bfxmhgkqr"
-        ],
-        "sources": [
-          "iOS",
-          "Android"
-        ],
-        "properties": [
-          {
-            "id": "8JnGtRfEw",
-            "name": "email",
-            "description": "The email address used to create the account",
-            "type": "String",
-            "required": true
-          },
-          {
-            "id": "5TgBhNjKm",
-            "name": "phone_number",
-            "description": "The phone number used to create the account",
-            "type": "String",
-            "required": false
-          }
-        ]
-      },
-      {
-        "id": "iVmNoPqRs",
-        "name": "Ride Requested",
-        "description": "A ride has been requested by the user",
-        "category_ids": [
-          "cghklmstu"
-        ],
-        "sources": [
-          "iOS",
-          "Android"
-        ],
-        "properties": [
-          {
-            "id": "9BvFcXzYw",
-            "name": "pickup_location",
-            "description": "The pickup location entered by the user",
-            "type": "String",
-            "required": true
-          },
-          {
-            "id": "4DcVbNhMj",
-            "name": "destination",
-            "description": "The destination entered by the user",
-            "type": "String",
-            "required": true
-          }
-        ]
-      }
+        {
+            "id": "p62Ljsjm5D",
+            "name": "Login Screen Opened",
+            "description": "A login screen has been opened",
+            "category_ids": [
+                "aexesvkax"
+            ],
+            "sources": [
+                "iOS",
+                "Android"
+            ],
+            "properties": [
+                {
+                    "id": "3YOTg-Opp",
+                    "name": "google_auth_is_enabled",
+                    "description": "A flag that indicates it is possible to login with Google",
+                    "type": "Bool",
+                    "required": true
+                }
+            ]
+        },
+        {
+            "id": "p62Ljsjm5D",
+            "name": "Login Screen Rotated",
+            "description": "A login screen has been rotated",
+            "category_ids": [
+                "aexesvkax"
+            ],
+            "sources": [
+                "iOS",
+                "Android"
+            ],
+            "properties": []
+        },
+        {
+            "id": "sYdFgHjKl",
+            "name": "Account Created",
+            "description": "A new account has been created",
+            "category_ids": [
+                "bfxmhgkqr"
+            ],
+            "sources": [
+                "iOS",
+                "Android"
+            ],
+            "properties": [
+                {
+                    "id": "8JnGtRfEw",
+                    "name": "email",
+                    "description": "The email address used to create the account",
+                    "type": "String",
+                    "required": true
+                },
+                {
+                    "id": "5TgBhNjKm",
+                    "name": "phone_number",
+                    "description": "The phone number used to create the account",
+                    "type": "String",
+                    "required": false
+                }
+            ]
+        },
+        {
+            "id": "iVmNoPqRs",
+            "name": "Ride Requested",
+            "description": "A ride has been requested by the user",
+            "category_ids": [
+                "cghklmstu"
+            ],
+            "sources": [
+                "iOS",
+                "Android"
+            ],
+            "properties": [
+                {
+                    "id": "9BvFcXzYw",
+                    "name": "pickup_location",
+                    "description": "The pickup location entered by the user",
+                    "type": "String",
+                    "required": true
+                },
+                {
+                    "id": "4DcVbNhMj",
+                    "name": "destination",
+                    "description": "The destination entered by the user",
+                    "type": "String",
+                    "required": true
+                }
+            ]
+        }
     ],
     "categories": [
-      {
-        "id": "aexesvkax",
-        "name": "Login Screen",
-        "group_id": "dasfgsdajg"
-      },
-      {
-        "id": "bfxmhgkqr",
-        "name": "Sign Up Screen",
-        "group_id": "dasfgsdajg"
-      },
-      {
-        "id": "cghklmstu",
-        "name": "Request Ride Screen",
-        "group_id": "asdsasafga"
-      }
+        {
+            "id": "aexesvkax",
+            "name": "Login Screen",
+            "group_id": "dasfgsdajg"
+        },
+        {
+            "id": "bfxmhgkqr",
+            "name": "Sign Up Screen",
+            "group_id": "dasfgsdajg"
+        },
+        {
+            "id": "cghklmstu",
+            "name": "Request Ride Screen",
+            "group_id": "asdsasafga"
+        }
     ],
     "groups": [
-      {
-        "id": "dasfgsdajg",
-        "name": "Authentication Flow"
-      },
-      {
-        "id": "asdsasafga",
-        "name": "RideHailing"
-      }
+        {
+            "id": "dasfgsdajg",
+            "name": "Authentication Flow"
+        },
+        {
+            "id": "asdsasafga",
+            "name": "RideHailing"
+        }
     ]
 }
